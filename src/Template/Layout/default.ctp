@@ -21,19 +21,20 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
 
     <?= $this->fetch('meta') ?>
-    <?= $this->Html->meta('icon') ?>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:url" content="https://libea.me/">
-    <meta property="og:title" content="Le site de la Team Mouffette">
-    <meta property="og:description" content="La Team Mouffette vous présente son site web de type l'internet">
+    <meta property="og:title" content="Libéa - Redéfinissez votre liberté">
+    <meta property="og:description" content="Libéa est une plateforme propice à l’échange et au soutien moral pour permettre l’accompagnement dans le sevrage d’une addiction sexuelle.">
     <meta property="og:image" content="https://libea.me/img/libea/libea-icon.png">
     <meta property="og:site_name" content="Libea">
 
+    <meta name="description" content="Libéa est une plateforme propice à l’échange et au soutien moral pour permettre l’accompagnement dans le sevrage d’une addiction sexuelle.">
+
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@jo_CoBen">
-    <meta name="twitter:creator" content="@jo_CoBen">
+    <meta name="twitter:site" content="@Libea_now">
+    <meta name="twitter:creator" content="@Libea_now">
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/libea/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/libea/favicon/favicon-32x32.png">
@@ -53,11 +54,20 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
 
-    <title> Team Mouffette </title>
+    <title>Libéa - Redéfinissez votre liberté</title>
 
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('style.css') ?>
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/949f9ba2ad.js" crossorigin="anonymous"></script>
+
+
 
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
@@ -70,31 +80,67 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <!-- End Google Tag Manager (noscript) -->
 
 
-    <!--<nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <h1><a href=""><?/*= $this->fetch('title') */?></a></h1>
-            </li>
-        </ul>
 
-    </nav>-->
+    <header >
+        <div class="icon-burger">
+            <span></span>
+        </div>
+
+        <div class="header-logo">
+            <a href="#">
+                <img src="img/libea/libea-logo.svg" alt="Logo Libea">
+            </a>
+
+        </div>
+
+        <div class="header-btn-info">
+            <a href="#" class="btn cta-modal-contact">
+                <span class="text">Contact</span>
+            </a>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#landDe">Constat</a></li>
+                <li><a href="#landTr">Les risques</a></li>
+                <li><a href="#landQu">La solution</a></li>
+            </ul>
+
+            <a href="#" class="btn cta-modal-contact">
+                <span class="text">Contact</span>
+            </a>
+
+            <div class="socialNetwork">
+                <a href="https://www.facebook.com/Lib%C3%A9a-105005314588286" target="_blanc"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/Libea_now" target="_blanc"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/company/54289896" target="_blanc"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+        </nav>
+
+
+    </header>
+
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
+    <div class="clearfix">
         <?= $this->fetch('content') ?>
     </div>
     <footer>
-        <p>Vous pouvez nous suivre sur ces réseaux</p>
-        <div>
-            <a><img src="" alt></a>
-            <a><img src="" alt></a>
-            <a><img src="" alt></a>
-        </div>
-        <div>
+        <div class="nemo">
             <a>Libéa® 2020</a>
             <a>Mentions légales</a>
-            <a>Contact</a>
         </div>
     </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 
 

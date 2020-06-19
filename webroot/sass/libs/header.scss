@@ -1,0 +1,212 @@
+header{
+    background: $background;
+    position: fixed;
+    display: flex;
+    height: 70px;
+    width: 100%;
+    z-index: 999;
+    opacity: .9;
+    top:0;
+
+    .icon-burger{
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+
+        span{
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+
+
+    }
+
+    .header-logo{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            height: 30px;
+        }
+
+    }
+
+    .header-logo a{
+        display: inline-block;
+        width: 65px;
+        height: 30px;
+        position: relative;
+        overflow: hidden;
+
+        img{
+            transition: bottom ease-out .4s;
+            position: absolute;
+            bottom: -30px;
+        }
+
+        .display{
+            bottom: 0px!important;
+        }
+    }
+
+    .header-btn-info{
+        flex: 1;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin: 0;
+
+        a{
+            padding: 10px 15px;
+
+        }
+
+    }
+
+   nav{
+       background: $background;
+       position: fixed;
+       top:70px;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       padding:0 35px;
+       visibility: hidden;
+
+       ul{
+           margin: 10px 0 0;
+       }
+
+       li > a{
+           font-weight: bold;
+           font-size: 20px;
+           padding: 25px 0;
+           display: inline-block;
+           letter-spacing: 0.18em;
+           text-transform: uppercase;
+       }
+
+       .socialNetwork{
+           position: absolute;
+           bottom: 30px;
+           display: flex;
+           justify-content: space-evenly;
+           left: 35px;
+           right: 35px;
+
+           i{
+               font-size: 30px;
+               color: $text;
+           }
+       }
+
+
+
+   }
+
+
+    @media screen and (min-width: 1024px) {
+
+
+        .icon-burger {
+            display: none;
+        }
+
+        .header-btn-info {
+            order: 1;
+
+            .sign {
+                display: none;
+            }
+            .text{
+                display: inherit;
+            }
+        }
+
+
+
+        nav{
+            position: initial;
+            padding: 0 35px;
+            visibility: visible;
+            flex: 3;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .socialNetwork{
+                display: none;
+            }
+
+            .btn{
+                display: none;
+            }
+
+            ul{
+                display: flex;
+
+                margin:0;
+
+                a{
+                    font-size: 16px;
+                    padding: 0 25px;
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header-toggle {
+        opacity: 1;
+
+        nav {
+            visibility: visible;
+
+            ul{
+                padding-left: 0;
+            }
+
+        }
+
+        .header-btn-info {
+            display: none;
+            order: 1;
+        }
+
+        .header-logo {
+            justify-content: flex-end;
+
+            a {
+                margin-right: 25px;
+            }
+
+            img {
+                height: 20px;
+                bottom: 0!important;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
