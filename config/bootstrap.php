@@ -82,6 +82,7 @@ try {
  * shared configuration.
  */
 //Configure::load('app_local', 'default');
+//Configure::load('app_local', 'default');
 
 /*
  * When debug = true the metadata cache should only last

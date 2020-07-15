@@ -118,9 +118,13 @@ li{
         text-transform: uppercase;
         text-align: left;
         line-height: 125%;
+
+        > span{
+            color: $bleu;
+        }
     }
 
-    span{
+    > span{
         font-style: italic;
         font-weight: 300;
         font-size: 9px;
@@ -216,12 +220,11 @@ img{
 
 footer {
     margin-top: 40px;
-    text-align: center;
     background: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: right;
     background: $background;
     position: relative;
 
@@ -240,7 +243,12 @@ footer {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        font-size: 10px;
+        font-size: 18px;
+
+         div > a{
+            color: $bleu;
+            font-size: 16px;
+        }
     }
 
 }

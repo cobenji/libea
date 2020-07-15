@@ -13,4 +13,8 @@ class LandingController  extends AppController
 
     }
 
+    public function rgpd(){
+
+    }
+
 }

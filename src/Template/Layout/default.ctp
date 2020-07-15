@@ -25,12 +25,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:url" content="https://libea.me/">
-    <meta property="og:title" content="Libéa - Redéfinissez votre liberté">
-    <meta property="og:description" content="Libéa est une plateforme propice à l’échange et au soutien moral pour permettre l’accompagnement dans le sevrage d’une addiction sexuelle.">
+    <meta property="og:title" content="Libéa - Construire la confiance.">
+    <meta property="og:description" content="Une solution qui prend en charge les personnes dépendantes sexuellement et garantit un accompagnement respectueux des droits fondamentaux des personnes.">
     <meta property="og:image" content="https://libea.me/img/libea/libea-icon.png">
     <meta property="og:site_name" content="Libea">
 
-    <meta name="description" content="Libéa est une plateforme propice à l’échange et au soutien moral pour permettre l’accompagnement dans le sevrage d’une addiction sexuelle.">
+    <meta name="description" content="Une solution qui prend en charge les personnes dépendantes sexuellement et garantit un accompagnement respectueux des droits fondamentaux des personnes.">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Libea_now">
@@ -54,14 +54,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 
 
-    <title>Libéa - Redéfinissez votre liberté</title>
+    <title>Libéa - Construire la confiance.</title>
 
-
-
-
-
+    <?= $this->Html->css('base.css') ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <?= $this->Html->css('style.css') ?>
+
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -103,7 +101,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <nav>
             <ul>
                 <li><a href="#landDe">Constat</a></li>
-                <li><a href="#landTr">Les risques</a></li>
+                <li><a href="#landTr">LE POURQUOI</a></li>
                 <li><a href="#landQu">La solution</a></li>
             </ul>
 
@@ -112,9 +110,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </a>
 
             <div class="socialNetwork">
-                <a href="https://www.facebook.com/Lib%C3%A9a-105005314588286" target="_blanc"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://twitter.com/Libea_now" target="_blanc"><i class="fab fa-twitter-square"></i></a>
                 <a href="https://www.linkedin.com/company/54289896" target="_blanc"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/Libea_now" target="_blanc"><i class="fab fa-twitter"></i></a>
             </div>
 
         </nav>
@@ -129,7 +126,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <footer>
         <div class="nemo">
             <a>Libéa® 2020</a>
-            <a>Mentions légales</a>
+            <div>
+                <a href="https://libea.me/landing/rgpd">Mentions légales</a>
+                <a href="">Kit de Presse</a>
+            </div>
         </div>
     </footer>
 

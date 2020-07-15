@@ -1,6 +1,5 @@
 /*Header*/
 
-
 let header = document.querySelector('header')
 let buttonBurger = document.querySelector('.icon-burger span')
 let nav = document.querySelector('nav')
@@ -29,7 +28,6 @@ nav.addEventListener('click', () => {
 //header changement
 
 let logoHeader = document.querySelector(".header-logo img")
-
 
 window.onscroll = function() {scrollFunction()}
 
@@ -74,18 +72,59 @@ let ctaModalContact = document.querySelectorAll('.cta-modal-contact');
 let modalContact = document.querySelector('#modal-contact');
 let statModal = 0
 
+
+function disableModalContact(){
+    modalContact.classList.remove("modal-toggle")
+    statModal = 0
+}
+
+function toggleModalContact(){
+    modalContact.classList.add("modal-toggle")
+    statModal++
+
+}
+
 ctaModalContact.forEach(none => {
     none.addEventListener('click', () => {
         event.preventDefault();
         if (statModal == 0) {
-            modalContact.classList.add("modal-toggle")
-            statModal++
+            toggleModalContact()
         } else {
-            modalContact.classList.remove("modal-toggle")
-            statModal = 0
+            disableModalContact()
         }
     });
 });
 
 
-document.body.clientHeight
+
+
+
+let isInViewport = function (elem) {
+    let bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+
+
+
+
+let landQu = document.querySelector('.moContact');
+
+
+if(document.body.clientWidth >= 1024) {
+
+    window.addEventListener('scroll', () => {
+        if (isInViewport(landQu)) {
+            toggleModalContact()
+        } else {
+            disableModalContact()
+        }
+    });
+
+}
+
+

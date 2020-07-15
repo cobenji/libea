@@ -508,8 +508,8 @@ table td {
 }
 
 body {
-  --color-rose: #E7247E;
-  --color-bleu: #206CFF;
+  --color-rose: #da599a;
+  --color-bleu: #195795;
   --color-light: #D4D4D4;
   background: #F8F9FA;
 }
@@ -539,7 +539,7 @@ h3 {
   font-size: 18px;
   text-align: justify;
   text-transform: uppercase;
-  color: #206CFF;
+  color: #195795;
   margin-bottom: 10px;
 }
 h3 span {
@@ -574,7 +574,7 @@ h3 span {
   content: "";
   position: absolute;
   width: 26px;
-  background: #206CFF;
+  background: #195795;
   height: 2px;
   left: 29px;
   top: 10px;
@@ -600,7 +600,7 @@ a {
 }
 
 a:hover {
-  color: #E7247E;
+  color: #da599a;
   text-decoration: none;
 }
 
@@ -618,7 +618,10 @@ li {
   text-align: left;
   line-height: 125%;
 }
-.para-bold span {
+.para-bold p > span {
+  color: #195795;
+}
+.para-bold > span {
   font-style: italic;
   font-weight: 300;
   font-size: 9px;
@@ -635,7 +638,7 @@ li {
   font-weight: 600;
   font-size: 14px;
   color: #FFF;
-  background-color: #E7247E;
+  background-color: #da599a;
   margin: 20px auto;
   cursor: pointer;
   transition: background 0.2s ease-out;
@@ -644,7 +647,7 @@ li {
 
 .btn:hover {
   box-shadow: 0px 2px 7px rgba(235, 141, 19, 0.25);
-  background: #538eff;
+  background: #2071c1;
   color: white;
 }
 
@@ -703,12 +706,11 @@ img {
 /*------------ FOOTER ------------*/
 footer {
   margin-top: 40px;
-  text-align: center;
   background: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  text-align: right;
   background: #F8F9FA;
   position: relative;
 }
@@ -724,7 +726,11 @@ footer .nemo {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size: 10px;
+  font-size: 18px;
+}
+footer .nemo div > a {
+  color: #195795;
+  font-size: 16px;
 }
 
 footer:before {
@@ -1119,10 +1125,15 @@ header nav .socialNetwork i {
 /*-------------------- Landing ------------------*/
 .container {
   position: relative;
+  padding: 5% 30px !important;
 }
 
 .clearfix {
   overflow-x: hidden;
+}
+.clearfix .container:first-child {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 @media screen and (min-width: 1020px) {
@@ -1132,13 +1143,13 @@ header nav .socialNetwork i {
 }
 .bg-blue {
   background: #DCEDFF;
+  position: relative;
 }
 
 section {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 70px);
-  scroll-margin-top: 70px;
 }
 
 #landUn {
@@ -1194,8 +1205,30 @@ section {
   line-height: 125%;
   letter-spacing: -0.015em;
   text-transform: uppercase;
-  background: #206CFF;
-  box-shadow: 10px 0 0px 0px #206CFF, -10px 0 0px 0px #206CFF;
+  background: #195795;
+  box-shadow: 10px 0 0px 0px #195795, -10px 0 0px 0px #195795;
+}
+
+.part2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url("../img/landing/part/part1.svg") no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 300px;
+  top: -2.9%;
+}
+
+.part2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url("../img/landing/part/part2.svg") no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 300px;
+  bottom: -270Px;
 }
 
 #landQu .socialNetwork a {
@@ -1204,7 +1237,7 @@ section {
 }
 #landQu .socialNetwork i {
   font-size: 40px;
-  color: #206CFF;
+  color: #195795;
 }
 #landQu .text {
   text-align: center;
@@ -1242,6 +1275,7 @@ figure img {
 figure p {
   font-size: 12px;
   margin: 0;
+  letter-spacing: 0;
 }
 figure figcaption {
   position: absolute;
@@ -1252,7 +1286,7 @@ figure a {
   position: absolute;
   display: inline-block;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.21);
-  background: #206CFF;
+  background: #195795;
   text-align: center;
   color: white;
   font-weight: 300;
@@ -1314,10 +1348,13 @@ figure a {
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+#modal-contact p {
+  letter-spacing: 0;
+}
 #modal-contact > div:first-child {
   position: absolute;
   left: -35px;
-  background: #206CFF;
+  background: #195795;
   color: white;
   text-align: center;
   border-radius: 50px;
@@ -1336,7 +1373,7 @@ figure a {
 }
 #modal-contact .text-blue {
   font-size: 24px;
-  color: #206CFF;
+  color: #195795;
 }
 #modal-contact .text-blue span {
   font-weight: bold;
@@ -1352,7 +1389,7 @@ figure a {
 .mc-field-group input[type=email] {
   height: 55px;
   width: 100%;
-  border: 1px #206CFF solid;
+  border: 1px #195795 solid;
   border-radius: 40px;
   padding: 20px;
 }
@@ -1403,7 +1440,7 @@ input[name=subscribe] {
   }
   #modal-contact .text-blue {
     font-size: 24px;
-    color: #206CFF;
+    color: #195795;
     text-align: left;
   }
   #modal-contact .text-blue span {
@@ -1411,13 +1448,21 @@ input[name=subscribe] {
   }
 }
 @media screen and (min-width: 1024px) {
+  .part2:before {
+    top: -124px;
+  }
+
+  .part2:after {
+    bottom: -250Px;
+  }
+
   #landUn {
     height: calc(100vh - 70px);
     display: flex;
     align-items: baseline;
   }
   #landUn > img {
-    height: 150px;
+    height: 120px;
     width: initial;
     margin-bottom: 20Px;
     display: initial;
@@ -1456,7 +1501,7 @@ input[name=subscribe] {
   .image-text p span {
     font-size: 54px;
     letter-spacing: -0.015em;
-    box-shadow: 10px 0 0px 0px #206CFF, -10px 0 0px 0px #206CFF;
+    box-shadow: 10px 0 0px 0px #195795, -10px 0 0px 0px #195795;
   }
 
   figure {
@@ -1522,6 +1567,7 @@ input[name=subscribe] {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 5%;
   }
   #landDe .text p {
     text-align: center;
@@ -1529,12 +1575,12 @@ input[name=subscribe] {
   }
 
   #landQu .socialNetwork a {
-    margin: 3%;
+    margin: 3% 3% 3% 0;
     display: inline-block;
   }
   #landQu .socialNetwork i {
     font-size: 40px;
-    color: #206CFF;
+    color: #195795;
   }
   #landQu .text {
     text-align: left;

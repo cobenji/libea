@@ -29,7 +29,7 @@
 </div>
 
 
-<div class="container-fluid image-text bg-blue">
+<div class="container-fluid image-text bg-blue part1">
 
     <div class="container">
         <div class="row">
@@ -98,14 +98,14 @@
 
 
 
-<div class="container-fluid bg-blue">
+<div class="container-fluid bg-blue part2">
 
     <section id="landTr" class="container">
 
         <div class="title">
             <div>
                 <span>02</span>
-                <h2>LES RISQUES</h2>
+                <h2>LE POURQUOI</h2>
             </div>
             <span>UNE RESPONSABILITé</span>
         </div>
@@ -113,14 +113,35 @@
         <div class="row justify-content-between">
             <div class="col-md-5 col-12 d-flex flex-column align-self-center">
                 <div class="para-bold">
-                    <p>L’entreprise peut être tenue responsable.</p>
+                    <p>UNe intégration dans votre démarche <span>RSE.</span></p>
+                </div>
+                <p>L’approche de Libea est construite en applicant le standard ISO 26000 pour intégrer un comportement responsable socialement dans votre organisation.</p>
+
+            </div>
+
+            <div class="col-md-5 col-12 board">
+                <figure data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
+                    <img src="img/landing/land-rse.svg" alt="">
+                    <figcaption>
+                        <h3><span>La QVT</span> - Qualité de Vie au Travail</h3>
+                        <p>La RSE de l’entreprise ne peut se construire exclusivement sur des engagements environnementaux ou écologiques. Dans le marché concurrentiel actuel, le respect accordé à l’humain est un enjeu majeur pour une entreprise qui se veux moderne et innovante, c’est ici qu’intervient la QVT.</p>
+                    </figcaption>
+
+                </figure>
+            </div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-md-5 col-12 d-flex flex-column align-self-center order-md-1">
+                <div class="para-bold">
+                    <p>L’entreprise peut être tenue <span>responsable.</span></p>
                 </div>
                 <p>Il est trés difficile de quantifié la proportion d’hypersexuels car le sujet est tabou et les comportements sont variés, mais <strong>l’imaginaire peut finir par nourrir l’agissement.</strong></p>
 
             </div>
 
             <div class="col-md-5 col-12 board">
-                <figure data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
+                <figure data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
                     <img src="img/landing/land-c.svg" alt="">
                     <figcaption>
                         <h3><span>L’ARTICLE L. 1153-5 </span>code du travail</h3>
@@ -157,14 +178,13 @@
             <div class="text col-md-5 col-12">
 
                 <img src="img/libea/libea-logo.svg" alt="Logo Libea">
-                <p class="bold">Construire la confiance.</p>
+                <p class="bold ">Construire la confiance.</p>
                 <p>Libéa souhaite apporter un regard neuf sur les relations sexuelles, les replacer dans un schéma humain et non plus de consommation.</p>
                 <p>A travers l’échange, le partage et la discussion, Libéa invente une solution qui permet de les aider pour diminuer les effets négatifs du sexe sur certains patients et aussi de réduire les harcèlements et abus sexuels au travail. </p>
 
-                <div class="socialNetwork">
-                    <a href="https://www.facebook.com/Lib%C3%A9a-105005314588286" target="_blanc"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com/Libea_now" target="_blanc"><i class="fab fa-twitter"></i></a>
+                <div class="socialNetwork moContact">
                     <a href="https://www.linkedin.com/company/54289896" target="_blanc"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Libea_now" target="_blanc"><i class="fab fa-twitter"></i></a>
                 </div>
 
             </div>
