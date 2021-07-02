@@ -1,6 +1,6 @@
 # Libea
 
-Libea est un projet d'école sur la prévention d'harcèlement sexuelle en entreprise.
+Libea est un projet d'école sur l'accompagnement de l’hypersexualité en entreprise.
 
 ## Landing Page
 
